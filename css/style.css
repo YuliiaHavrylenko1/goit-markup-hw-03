@@ -17,6 +17,16 @@ ul {
   list-style-type: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .header-logo .accent {
   color: #2e2f42;
   font-family: Raleway, sans-serif;
@@ -27,7 +37,18 @@ ul {
   text-transform: uppercase;
 }
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .header-logo {
+  display: flex;
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -35,6 +56,34 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 332px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-menu-link {
@@ -56,9 +105,15 @@ ul {
   letter-spacing: 0.32px;
 }
 
-.hero {
+.header-address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-container {
   background: #2e2f42;
   text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -67,6 +122,8 @@ ul {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin: 0 auto;
+  max-width: 496px;
 }
 
 .btn {
@@ -78,11 +135,46 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  gap: 10px;
+  border-radius: 4px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn:hover,
 .btn:focus {
   background-color: #404bbf;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.feature-container {
+  display: flex;
+  padding: 120px 156px;
+}
+
+.subtitle-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .subtitle-list-items {
@@ -93,6 +185,11 @@ ul {
   letter-spacing: 0.4px;
 }
 
+.our-team-container {
+  background: #f4f4fd;
+  padding: 120px 0;
+}
+
 .paragraph {
   color: #434455;
   font-size: 16px;
@@ -100,9 +197,9 @@ ul {
   letter-spacing: 0.32px;
 }
 
-.team-gallery {
+/*.our-team {
   background: #f4f4fd;
-}
+} */
 
 .team-title {
   color: #2e2f42;
@@ -111,10 +208,24 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .list-items-card {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.our-team-info {
+  padding: 32px 0;
+  width: 264px;
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  margin: 0;
+}
+
+.list-team {
+  display: flex;
+  gap: 24px;
 }
 
 .team-name {
@@ -124,6 +235,9 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
 }
 
 .team-prof {
@@ -134,6 +248,10 @@ ul {
   letter-spacing: 0.32px;
 }
 
+.portfolio-container {
+  padding: 120px 0;
+}
+
 .portfolio-title {
   color: #2e2f42;
   text-align: center;
@@ -141,6 +259,13 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 
 .portfolio-subtitle {
@@ -149,6 +274,21 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+
+.portfolio-item {
+  width: calc((100% - 24px * 2) / 3);
+}
+
+.portfolio-sub-container {
+  padding: 32px 16px;
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  width: 360px;
+  align-items: flex-start;
+  margin: 0;
 }
 
 .portfolio-text {
@@ -159,7 +299,11 @@ ul {
 }
 
 .footer {
+  padding: 140px 0;
   background-color: #2e2f42;
+}
+
+.footer-container {
 }
 
 .footer-logo {
@@ -180,10 +324,13 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-text {
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  width: 264px;
 }
