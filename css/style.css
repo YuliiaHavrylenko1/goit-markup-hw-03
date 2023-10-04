@@ -47,6 +47,10 @@ img {
   display: block;
 }
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-logo {
   display: flex;
   color: #4d5ae5;
@@ -56,6 +60,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .container {
@@ -66,19 +71,15 @@ img {
 }
 
 .header-container {
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
   align-items: center;
   gap: 332px;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-navigation {
   display: flex;
   align-items: flex-start;
-  flex-grow: 1;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .header-menu-list {
@@ -87,11 +88,13 @@ img {
 }
 
 .header-menu-link {
+  display: inline-flex;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  padding: 24px 0;
 }
 
 .header-address {
@@ -110,10 +113,13 @@ img {
   gap: 40px;
 }
 
-.hero-container {
+.section-hero {
   background: #2e2f42;
-  text-align: center;
   padding: 188px 0;
+}
+
+.hero-container {
+  text-align: center;
 }
 
 .hero-title {
@@ -143,6 +149,7 @@ img {
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
 .btn:hover,
@@ -163,14 +170,18 @@ img {
   overflow: hidden;
 }
 
+.section-feature {
+  padding: 120px 0;
+}
+
 .feature-container {
   display: flex;
-  padding: 120px 156px;
 }
 
 .subtitle-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .feature-item {
@@ -183,9 +194,10 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
-.our-team-container {
+.section-our-team {
   background: #f4f4fd;
   padding: 120px 0;
 }
@@ -212,6 +224,7 @@ img {
 }
 
 .list-items-card {
+  border-radius: 0px 0px 4px 4px;
   width: calc((100% - 3 * 24px) / 4);
 }
 
@@ -248,7 +261,7 @@ img {
   letter-spacing: 0.32px;
 }
 
-.portfolio-container {
+.section-portfolio {
   padding: 120px 0;
 }
 
@@ -299,7 +312,7 @@ img {
 }
 
 .footer {
-  padding: 140px 0;
+  padding: 100px 0;
   background-color: #2e2f42;
 }
 
@@ -314,6 +327,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo .accent {
